@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>TODOS:</h1>
+    <h1>Mario's TO Do List:</h1>
     <Todo></Todo>
     <i class="nes-mario"></i>
   </div>
