@@ -1,28 +1,64 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>TODOS:</h1>
+    <Todo></Todo>
+    <i class="nes-mario"></i>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Todo from "./components/todo.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    Todo
   }
-}
+};
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2p");
+@import url("https://unpkg.com/nes.css/css/nes.css");
+
+html,
+body,
+pre,
+code,
+kbd,
+samp {
+  font-family: "Press Start 2P";
+}
+
+body {
+  background: #20262e;
+  padding: 20px;
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  transition: all 0.2s;
+}
+
+li {
+  margin: 8px 0;
+}
+
+del {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.padding {
+  padding: 1px 7px 2px;
+}
+
+.flex {
+  display: flex;
+}
+
+.space {
+  flex-grow: 1;
 }
 </style>
